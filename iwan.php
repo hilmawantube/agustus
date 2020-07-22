@@ -4,7 +4,7 @@ include "function1.php";
 echo "\e[95m==================================================\n";
 echo
  "\e[93m            \e[96mVOCER LIMA BELAS RIBU \e[93m \n";
-echo "\e[96m  ================================================\n";
+echo "\e[32m==================================================\n";
 echo color("yellow","Masukin Tokennya : ");
 $token = trim(fgets(STDIN));
 echo "\n".color("red","Brazil Redy To LOSE?: y/n ");
@@ -21,7 +21,7 @@ echo "\n".color("red","Brazil Redy To LOSE?: y/n ");
         if(strpos($code1, 'Mantap Udah Dapet BosQuu')){
         echo "\n".color("green"," Message: ".$message);
         }else{
-        echo "\n".color("white"," Message: ".$message);
+        echo "\n".color("green"," Message: ".$message);
         sleep(1);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
