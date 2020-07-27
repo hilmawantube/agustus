@@ -54,7 +54,7 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","[+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("yellow","\n===========UPDATE 21 JULI=============");
+        echo color("yellow","\n===========UPDATE 23 JULI=============");
         echo "\n".color("green"," [Food] VOC DUA PULUH RIBU");
         echo "\n".color("yellow","▶SabarYa");
         for($a=1;$a<=3;$a++){
