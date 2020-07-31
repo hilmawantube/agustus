@@ -3,12 +3,9 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo "\e[93m<=========🅷 🅸 🅻 🅼 🅰 🆆 🅰 🅽 🆃 🆄 🅱 🅴=========> \n";
+echo "\e[93m!!============HILMAWAN TUBE===========!! \n";
 echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[32m         SCRIFT GOJEK 23 JULI       \n";
-echo "\e[93m  ===================================== \n";
-echo "\e[93m   PASTIKAN SUDAH MENGGUNAKAN FAKE GPS     \n";
-echo "\e[96m        [!]GUNAKAN UNTUK MAKAN[!]         \n";
+echo "\e[32m         SCRIFT GOJEK AGUSTUS       \n";
 echo "\e[93m  ======================================\n";
 echo "\e[93m       \e[32m AUTO CLAIM VOCHER 20K \e[93m \n";
 echo "\e[93m  =====================================\n";
@@ -54,14 +51,14 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","[+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("yellow","\n===========UPDATE 23 JULI=============");
+        echo color("yellow","\n=========UPDATE AGUSTUS=============");
         echo "\n".color("green"," [Food] VOC DUA PULUH RIBU");
         echo "\n".color("yellow","▶SabarYa");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(35);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","Message: ".$message);
