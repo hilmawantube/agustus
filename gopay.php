@@ -80,13 +80,13 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("green"," Message: ".$message);
         gofood:
-        echo "\n".color("white","NUL");
+        echo "\n".color("white","[Game] CLAIM VOC GAME ");
         echo "\n".color("white"," Skipp");
         for($a=1;$a<=3;$a++){
         echo color("green",".");
-        sleep(0);
+        sleep(5);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOPAYARENA2020"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green"," Message: ".$message);
         sleep(2);
