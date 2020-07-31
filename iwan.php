@@ -16,7 +16,7 @@ echo "\n".color("red","Brazil Redy To LOSE?: y/n ");
         echo color("white",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PENGENGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Mantap Udah Dapet BosQuu')){
         echo "\n".color("green"," Message: ".$message);
